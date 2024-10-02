@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For the Love of My Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>For the Love of My Life</h1>
+            <p>You are the best thing that ever happened to me. I miss you and love you so much.</p>
+            <button onclick="scrollToContent()">click to see how much i love you</button>
+        </header>
+
+        <section id="gallery">
+            <h2>Our Beautiful Memories</h2>
+            <div class="gallery-images">
+        
+
+                <img src="qt3.jpg" alt="Memory 1">
+                <img src="qt4.jpg" alt="Memory 2">
+                <img src="qt5.jpg" alt="Memory 3">
+                <img src="us1.jpg" alt="Memory 5">
+                <img src="k2.jpg" alt="first kiss">
+                <img src="us2.jpg" alt="Memory 8">
+                <img src="us3.jpg" alt="Memory 9">
+                <img src="us4.jpg" alt="Memory 10">
+                <img src="us5.jpg" alt="Memory 11">
+                <img src="us8.jpg" alt="Memory 12">
+                <img src="k1.jpg" alt="first kiss">
+                <img src="k2.jpg" alt="first kiss">
+                <img src="k3.jpg" alt="first kiss">
+                <img src="k4.jpg" alt="first kiss">
+                <img src="k7.jpg" alt=" first kiss">
+                <img src="k5.jpg" alt="first kiss 1">
+                <img src="k6.jpg" alt="first kiss">
+                <img src="us7.jpg" alt="Memory 13">
+                <img src="us6.jpg" alt="Memory 14 ">
+            
+         
+            </div>
+        </section>
+
+        <section id="love-notes">
+            <h2 style="color: rgb(236, 236, 31);">Love Notes</h2>
+            <p style="color: rgb(236, 23, 190);">Every moment with you is a treasure.</p>
+            <p style="color: rgb(245, 245, 37);">You light up my life.</p>
+            <p style="color: rgb(234, 6, 255);">I can't wait to make more memories with you.</p>
+            <p style="color: rgb(234, 234, 118)">I hope we get to live a long life together and be happy forever</p>
+            <p style="color: rgb(217, 36, 0);">Every time I see you, I fall in love all over again.<br> Your glasses only add to your charm, making you look both adorable and beautiful.<br> But it's your smile that truly captivates me. When you smile, it's like the world fades<br> away,and all I can see is you. Your smile has this magical way of brightening my day and making me incredibly happy.<br> You're absolutely stunning, and I’m so lucky to have you in my life.</p>
+        </section>
+
+            <section id="timeline">
+                <h2>Our Journey</h2>
+                <div class="timeline-event">
+                    <p  style="text-decoration: underline;"><strong>26-02-2024:</strong> First time we talked in DM – The day I knew you were special.</p>
+                </div>
+                
+                <div class="timeline-event">
+                    <p style="text-decoration: underline;"><strong>10-08-2024:</strong> Our first IRL Meet – A memory I'll cherish forever.</p>
+                </div>
+                <div class="timeline-event">
+                    <p  style="text-decoration: underline;"><strong>15-08-2024:</strong> My dear madhavi we met again you travelled to noida for me our first IRL kiss (cheek) was on this day the highlight of day was when we ate together and u kissed me that was a complete shock for me </p>
+                </div>
+                <div class="timeline-event">
+                    <p  style="text-decoration: underline;"><strong>12-09-2024:</strong> We met again baby it is something i can not explain in words the best feeling i had the thrill we felt the adreline rush we had i met your sis and i hope she likes me the best highlight for me was the staircase </p>
+                </div>
+           
+           
+        </section>
+
+        <footer>
+            <h2 style="color: bisque;">I Love You</h2>
+            <p style="color: beige;">I can't wait to make more memories with you. I love you with all my heart.</p>
+            <div class="hearts" style="color: rgb(232, 218, 58);">
+                <span>❤️CUTIE</span>
+                <span>❤️ BEWEEII</span>
+                <span>❤️BABE</span>
+            </div>
+            <p style="height: 100px; color:rgb(207, 14, 162); font-size: 30px;">NEVER FORGET HOW MUCH I LOVE U 💖</p>
+            <BR>
+            <div id="countdown-timer">
+                <h2 style="color: rgba(138, 204, 104, 0.662); font-size: 30px;" >Time Left Until We Meet:</h2>
+                <p id="timer"></p>
+            </div>
+            
+        </footer>
+    </div>
+
+    <script>
+        function scrollToContent() {
+            document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        var countDownDate = new Date(" NOV 10, 2024 13:00:00").getTime();
+
+    var x = setInterval(function() {
+
+        
+        var now = new Date().getTime();
+            
+            
+            var distance = countDownDate - now;
+        
+      
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h " +
+        minutes + "m " + seconds + "s ";
+      
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "WE MET AND NOW YOU ARE MY GF ❤️";
+        }
+    }, 1000);
+    </script>
+</body>
+</html>
